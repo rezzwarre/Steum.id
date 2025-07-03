@@ -100,7 +100,8 @@ nav ul li a:hover {
 .hero {
   position: relative;
   height: 600px; /* atur tinggi hero sesuai kebutuhan */
-  width: 1521px;
+  width: 100%;
+  max-width: 100%;
   object-fit: contain;
   animation: fadeInUp 1s ease-out;
   transition: background-image 0.5s ease;
