@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="style-cart.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Steum.id</h1>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Cari produk..." />
+          <button>Cari</button>
+        </div>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Game</a></li>
+          <li><a href="Tentang.html">Tentang</a></li>
+          <li><a href="Kontak.html">Kontak</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="count-badge" id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero2">
+      <div>
+        <h1>Keranjang</h1>
+      </div>
+    </section>
+
+    <section class="cart">
+      <div class="cart-container" id="cart-items"></div>
+      <div class="cart-total">
+        <strong>Total:</strong> <span id="total-price">Rp 0</span>
+      </div>
+      <div class="checkout">
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </section>
+  </body>
+</html>

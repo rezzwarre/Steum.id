@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-produk.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="script.js"></script>
+    <script src="keranjang.js"></script>
+    <title>Game</title>
+  </head>
+  <body style="background-color: rgb(99, 20, 177)">
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Steum.id</h1>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Cari produk..." />
+          <button>Cari</button>
+        </div>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Game</a></li>
+          <li><a href="Tentang.html">Tentang</a></li>
+          <li><a href="Kontak.html">Kontak</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="count-badge" id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero2">
+      <div>
+        <h1>Our Game</h1>
+      </div>
+    </section>
+
+    <!-- Tambahan: Bagian Produk -->
+    <main>
+      <!-- Kategori Action -->
+      <section id="action" class="kategori">
+        <h2>Game Action</h2>
+        <div class="produk2-list">
+          <div class="produk2">
+            <img src="Gambar/godofwarragnarok.jpg" alt="God Of War Ragnarok" />
+            <h3>God Of War Ragnarok</h3>
+            <p>Rp 550.000</p>
+            <button onclick="addToCart('God Of War Ragnarok', 550000,'Gambar/godofwarragnarok.jpg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/gta5.avif" alt="GTA V" />
+            <h3>Grand Theft Auto V</h3>
+            <p>Rp 320.000</p>
+            <button onclick="addToCart('Grand Theft Auto V', 320000,'Gambar/gta5.avif')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/spiderman2.jpeg" alt="Spiderman 2" />
+            <h3>Spiderman 2</h3>
+            <p>Rp 530.000</p>
+            <button onclick="addToCart('Spiderman 2', 530000,'Gambar/spiderman2.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/reddead.webp" alt="Red Dead Redaption 2" />
+            <h3>Red Dead Redemption 2</h3>
+            <p>Rp 520.000</p>
+            <button onclick="addToCart('Red Dead Redemption 2', 520000,'Gambar/reddead.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img
+              src="Gambar/resident-evil-4-mobile-edition-apk-obb-thumbnail.webp"
+              alt="Resident Evil 4"
+            />
+            <h3>Resident Evil 4</h3>
+            <p>Rp 520.000</p>
+            <button onclick="addToCart('Resident Evil 4', 520000,'Gambar/resident-evil-4-mobile-edition-apk-obb-thumbnail.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/calofduty.webp" alt="Call Of Duty" />
+            <h3>Call Of Duty</h3>
+            <p>Rp 220.000</p>
+            <button onclick="addToCart('Call of Duty', 220000,'Gambar/calofduty.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/MortalKombat.jpeg" alt="Mortal Kombat 1" />
+            <h3>Mortal Kombat 1</h3>
+            <p>Rp 320.000</p>
+            <button onclick="addToCart('Mortal Kombat', 320000,'Gambar/MortalKombat.jpeg')">Tambah ke Keranjang</button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Kategori RPG -->
+      <section id="rpg" class="kategori">
+        <h2>Game RPG</h2>
+        <div class="produk2-list">
+          <div class="produk2">
+            <img src="Gambar/wither.webp" alt="The Witcher 3" />
+            <h3>The Witcher 3</h3>
+            <p>Rp 250.000</p>
+            <button onclick="addToCart('The Witcher 3', 250000,'Gambar/wither.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/eldenring.webp" alt="Elden Ring" />
+            <h3>Elden Ring</h3>
+            <p>Rp 620.000</p>
+            <button onclick="addToCart('Elden Ring' , 620000,'Gambar/eldenring.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/wukong.jpeg" alt="Wukong" />
+            <h3>Black Myth Wukong</h3>
+            <p>Rp 620.000</p>
+            <button onclick="addToCart('Black Myth Wukong', 620000,'Gambar/wukong.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/dota2.jpeg" alt="Dota 2" />
+            <h3>Dota 2</h3>
+            <p>Gratis</p>
+            <button onclick="addToCart('Dota 2', 0,'Gambar/dota2.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/diablo.webp" alt="Diablo 4" />
+            <h3>Diablo 4</h3>
+            <p>Rp 420.000</p>
+            <button onclick="addToCart('Diablo',420000,'Gambar/diablo.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/destiny.jpeg" alt="Destiny 2" />
+            <h3>Destiny 2</h3>
+            <p>Gratis</p>
+            <button onclick="addToCart('Destiny',0,'Gambar/destiny.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img
+              src="Gambar/AssassinsCreedMirageTagPage.avif"
+              alt="Assassins Creed Mirage"
+            />
+            <h3>Assassins Creed Mirage</h3>
+            <p>Rp 320.000</p>
+            <button onclick="addToCart('Assassins Creed Mirage',320000,'Gambar/AssassinsCreedMirageTagPage.avif')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img
+              src="Gambar/cbrpunk.webp"
+              alt="Cyberpunk 2077"
+            />
+            <h3>Cyberpunk 2077</h3>
+            <p>Rp 520.000</p>
+            <button onclick="addToCart('Cyberpunk',520000,'Gambar/cbrpunk.webp')">Tambah ke Keranjang</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kategori Strategy -->
+      <section id="strategy" class="kategori">
+        <h2>Game Strategy</h2>
+        <div class="produk2-list">
+          <div class="produk2">
+            <img src="Gambar/civili.jpeg" alt="Civilization VI" />
+            <h3>Civilization VI</h3>
+            <p>Rp 150.000</p>
+            <button onclick="addToCart('Civilization',150000,'Gambar/civili.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/ageofempire.jpeg" alt="Age of Empires IV" />
+            <h3>Age of Empires IV</h3>
+            <p>Rp 300.000</p>
+            <button onclick="addToCart('Age of Empires IV',300000,'Gambar/ageofempire.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/stardew_valley.webp" alt="Stardew Valley" />
+            <h3>Stardew Valley</h3>
+            <p>Rp 100.000</p>
+            <button onclick="addToCart('Stardew Valley',100000,'Gambar/stardew_valley.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/JWE2.jpeg" alt="Jurassic World Evolution 2" />
+            <h3>Jurassic World Evolution 2</h3>
+            <p>Rp 500.000</p>
+            <button onclick="addToCart('Jurassic World Evolution 2',500000,'Gambar/JWE2.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img
+              src="Gambar/Farmingsimulator25.jpeg"
+              alt="Farming Simulator 25"
+            />
+            <h3>Farming Simulator 25</h3>
+            <p>Rp 250.000</p>
+            <button onclick="addToCart('Farming Simulator 25',250000,'Gambar/Farmingsimulator25.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/worldwarship2.jpeg" alt="World Warship" />
+            <h3>World Warship</h3>
+            <p>Gratis</p>
+            <button onclick="addToCart('World Warship',0,'Gambar/worldwarship2.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/Heartofiron4.jpeg" alt="Heart Of Iron 4" />
+            <h3>Heart Of Iron IV</h3>
+            <p>Rp 520.000</p>
+            <button onclick="addToCart('Heart Of Iron VI',520000,'Gambar/Heartofiron4.jpeg')">Tambah ke Keranjang</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="survival" class="kategori">
+        <h2>Game Survival</h2>
+        <div class="produk2-list">
+          <div class="produk2">
+            <img src="Gambar/Minecraft.jpeg" alt="Minecraft" />
+            <h3>Minecraft</h3>
+            <p>Rp 550.000</p>
+            <button onclick="addToCart('Minecraft',550000,'Gambar/Minecraft.jpeg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/theforest.webp" alt="The Forest" />
+            <h3>The Forest</h3>
+            <p>Rp 250.000</p>
+            <button onclick="addToCart('The Forest',250000,'Gambar/theforest.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/dontstarve.webp" alt="Don't Starve" />
+            <h3>Don't Starve</h3>
+            <p>Rp 200.000</p>
+            <button onclick="addToCart('Dont Starve',200000,'Gambar/dontstarve.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/arksurvival.jpg" alt="ARK: Survival Evolved" />
+            <h3>ARK: Survival Evolved</h3>
+            <p>Rp 300.000</p>
+            <button onclick="addToCart('ARK : Survival Evolved',300000,'Gambar/arksurvival.jpg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img
+              src="Gambar/subnautica.jpg"alt="Subnautica"/>
+            <h3>Subnautica</h3>
+            <p>Rp 400.000</p>
+            <button onclick="addToCart('Subnautica', 400000,'Gambar/subnautica.jpg')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/greenhell.webp" alt="Green Hell" />
+            <h3>Green Hell</h3>
+            <p>Rp 220.000</p>
+            <button onclick="addToCart('Green Hell',220000,'Gambar/greenhell.webp')">Tambah ke Keranjang</button>
+          </div>
+          <div class="produk2">
+            <img src="Gambar/rust.webp" alt="Rust" />
+            <h3>Rust</h3>
+            <p>Rp 220.000</p>
+            <button onclick="addToCart('Rust',220000,'Gambar/rust.webp')">Tambah ke Keranjang</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Ngegame Skuyy</h3>
+        <p>
+          Game seru, hidup lebih greget! Terima kasih sudah mampir ke Ngegame
+          Skuyy — tempatnya beli game PC original dengan harga bersahabat. Stay
+          connected dan jangan sampai ketinggalan promo spesial!
+        </p>
+        <div>
+          <a href="#">Instagram</a>
+          |
+          <a href="#">Facebook</a>
+          |
+          <a href="#">Twitter</a>
+        </div>
+        <p class="copy">
+          &copy; 2025 Ngegame Skuyy. Powered by Gamers, for Gamers.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

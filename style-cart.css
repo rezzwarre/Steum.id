@@ -1,0 +1,115 @@
+.hero2 {
+  background: url("Gambar/new_login_bg_strong_mask.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.cart {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding-right: 100px;
+
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  border-radius: 12px;
+  align-items: center;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 10px;
+  padding: 30px 30px;
+  width: auto;
+  height: auto;
+  background: linear-gradient(to right, #323f4d, #0d4a88);
+}
+
+.cart-item h4 {
+  margin: 0.5 0 0.5rem;
+}
+
+.cart-item p {
+  margin: 0.3rem 0;
+}
+
+.cart-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.remove-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #e60000;
+}
+
+.cart-total {
+  font-size: 18px;
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.checkout {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.checkout-btn {
+  background: linear-gradient(135deg, #582ecc, #3b27ae);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: linear-gradient(135deg, #3b27ae, #582ecc);
+}
+
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-item img {
+    width: 80%;
+    height: 80%;
+  }
+}

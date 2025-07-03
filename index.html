@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steum.id</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav>
+        <div class="logo">
+          <h1>Steum.id</h1>
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Cari produk..." />
+          <button>Cari</button>
+        </div>
+
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="Produk.html">Game</a></li>
+          <li><a href="Tentang.html">Tentang</a></li>
+          <li><a href="Kontak.html">Kontak</a></li>
+          <li><a href="login.html">login</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="count-badge" id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div
+        class="hero-img active"
+        style="background-image: url('Gambar/new_login_bg_strong_mask.jpg')"
+      ></div>
+      <div
+        class="hero-img"
+        style="background-image: url('Gambar/bggame4.jpg')"
+      ></div>
+      <div
+        class="hero-img"
+        style="background-image: url('Gambar/bgrdr.png')"
+      ></div>
+      <div
+        class="hero-img"
+        style="background-image: url('Gambar/bgelderring.jpg')"
+      ></div>
+      <div
+        class="hero-img"
+        style="background-image: url('Gambar/bggame.jpg')"
+      ></div>
+
+      <!-- Navigasi_Serch -->
+    </section>
+
+    <section class="produk-container">
+      <!-- Kilas_Produk -->
+      <div class="card">
+        <img src="Gambar/spiderman2.jpeg" alt="Produk 1" />
+        <div class="card-info">
+          <h3>Spiderman 2</h3>
+          <p>Rp530.000</p>
+          <button onclick="addToCart('Spiderman 2', 530000,'Gambar/spiderman2.jpeg')">Tambah ke Keranjang</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="Gambar/resident-evil-4-mobile-edition-apk-obb-thumbnail.webp"
+          alt="Produk 2"
+        />
+        <div class="card-info">
+          <h3>Resident Evil 4</h3>
+          <p>Rp520.000</p>
+          <button onclick="addToCart('Resident Evil 4', 520000,'Gambar/resident-evil-4-mobile-edition-apk-obb-thumbnail.webp')">Tambah ke Keranjang</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Gambar/godofwarragnarok.jpg" alt="Produk 3" />
+        <div class="card-info">
+          <h3>God Of War Ragnarok</h3>
+          <p>Rp550.000</p>
+          <button onclick="addToCart('God Of War Ragnarok', 550000,'Gambar/godofwarragnarok.jpg')">Tambah ke Keranjang</button>
+        </div>
+      </div>
+
+      <!-- Tambahkan produk lainnya di sini -->
+    </section>
+
+    <section class="produk-container">
+      <div class="card">
+        <img src="Gambar/gta5.avif" alt="Produk 4" />
+        <div class="card-info">
+          <h3>Grand Theft Auto 5</h3>
+          <p>Rp320.000</p>
+           <button onclick="addToCart('Grand Theft Auto V', 320000,'Gambar/gta5.avif')">Tambah ke Keranjang</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Gambar/reddead.webp" alt="Produk 4" />
+        <div class="card-info">
+          <h3>Red Dead Redemption 2</h3>
+          <p>Rp520.000</p>
+         <button onclick="addToCart('Red Dead Redaption 2', 520000,'Gambar/reddead.webp')">Tambah ke Keranjang</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Gambar/MortalKombat.jpeg" alt="Produk 4" />
+        <div class="card-info">
+          <h3>Mortal Combat 1</h3>
+          <p>Rp320.000</p>
+          <button onclick="addToCart('MortalKombat', 320000,'Gambar/MortalKombat.jpeg')">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="penawaran">
+      <div class="wadah_penawaran">
+        <!-- Gambar di kiri -->
+        <div class="produk_penawaran">
+          <img
+            src="Gambar/resident-evil-4-mobile-edition-apk-obb-thumbnail.webp"
+            alt="Resident Evil 4"
+          />
+        </div>
+
+        <!-- Teks di kanan -->
+        <div class="wadah_teks_penawaran">
+          <h2>🔥 Game Terlaris Minggu Ini!</h2>
+          <p>
+            Hadapi ketakutan tanpa batas di <strong>Resident Evil 4</strong> —
+            pengalaman survival horror legendaris kini hadir dengan grafis
+            modern dan gameplay yang lebih intens! Wajib dimiliki oleh semua
+            pecinta game aksi.
+          </p>
+          <button class="bestsellerButton" onclick="addToCart('Resident Evil 4', 520000,'Gambar/resident-evil-4-mobile-edition-apk-obb-thumbnail.webp')">
+            🎮 Beli Sekarang
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="penawaran">
+      <div class="wadah_penawaran">
+        <!-- Teks di kiri -->
+        <div class="wadah_teks_penawaran">
+          <h2>⚔️ God of War: Ragnarok</h2>
+          <p>
+            Rasakan epik pertarungan antara Kratos dan dewa-dewa Nordik dalam
+            <strong>God of War: Ragnarok</strong>. Dengan grafik sinematik dan
+            alur cerita mendalam, game ini membawa pengalaman aksi-petualangan
+            ke level berikutnya!
+          </p>
+          <button class="bestsellerButton" onclick="addToCart('God Of War Ragnarok', 550000,'Gambar/godofwarragnarok.jpg')">
+            🎮 Beli Sekarang
+          </button>
+        </div>
+
+        <!-- Gambar di kanan -->
+        <div class="produk_penawaran">
+          <img src="Gambar/godofwarragnarok.jpg" alt="God of War Ragnarok" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <h3>Steum.id</h3>
+        <p>
+          Game seru, hidup lebih greget! Terima kasih sudah mampir ke Ngegame
+          Skuyy — tempatnya beli game PC original dengan harga bersahabat. Stay
+          connected dan jangan sampai ketinggalan promo spesial!
+        </p>
+        <div>
+          <a href="#">Instagram</a>
+          |
+          <a href="#">Facebook</a>
+          |
+          <a href="#">Twitter</a>
+        </div>
+        <p class="copy">&copy; 2025 Steum.id. Powered by Gamers, for Gamers.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+.kategori {
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.kategori h2 {
+  color: #d9d9d9;
+  margin-bottom: 18px;
+  margin-top: 15px;
+  margin-left: 30px;
+  padding-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.produk2-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #222;
+}
+
+.produk2 {
+  flex: 0 0 220px;    /* Lebar tetap, tidak mengecil */
+  width: 210px;       /* Lebar tetap */
+  min-width: 210px;   /* Pastikan tidak lebih kecil */
+  max-width: 210px;   /* Opsional, biar konsisten */
+  background: #444d65;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.produk2:hover {
+  transform: scale(1.05);
+}
+
+.produk2 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.produk2 h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.produk2 p {
+  color: #0e1312;
+  font-weight: bold;
+  margin: 0.9rem 0;
+}
+
+.produk2 button {
+  background: #6e840a;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 1.5rem 0;
+}
+.produk2 button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.produk2 button:active {
+  transform: scale(0.98);
+}

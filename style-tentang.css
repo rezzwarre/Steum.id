@@ -1,0 +1,66 @@
+/*======= Style.css_Tentang ============*/
+.tentang-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #364b64, #1a3957);
+  animation: fadeInUp 1s ease-out;
+}
+
+.tentang-text {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.tentang-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fefdff;
+  font-family: "Montserrat";
+}
+
+.tentang-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: white;
+}
+
+.tentang-image {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.tentang-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .tentang-container {
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .tentang-container{
+    font-size: 2rem;
+  }
+
+  
+}
