@@ -472,6 +472,7 @@ footer div div a {
 }
 .card img {
   width: 400px;
+  border-radius: 10px;
   height: auto;
   object-fit: cover;
 }
