@@ -454,8 +454,10 @@ footer div div a {
 }
 .card {
   position: relative;
-  width: 380px;
-  height: 400px;
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -558,4 +560,36 @@ footer div div a {
 }
 .produk button:active {
   transform: scale(0.98);
+}
+
+@media (max-width: 992px) {
+  .Produk-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .card {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .Produk-container {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-info {
+    padding: 20px;
+  }
 }
