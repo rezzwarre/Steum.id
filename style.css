@@ -471,7 +471,7 @@ footer div div a {
   transform: scale(1.05);
 }
 .card img {
-  width: 400px;
+  width: 350px;
   border-radius: 10px;
   height: auto;
   object-fit: cover;
