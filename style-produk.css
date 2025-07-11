@@ -17,6 +17,7 @@
   flex-wrap: nowrap;
   gap: 1.5rem;
   overflow-x: auto;
+  padding-top: 10px;
   padding-bottom: 10px;
   scrollbar-width: thin;
   scrollbar-color: #888 #222;
